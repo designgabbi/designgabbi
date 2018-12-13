@@ -255,6 +255,10 @@
 	.mnBranding{
 		right:11vw;
 	}
+	.subDetContBottom .slider{
+		height:50vh;
+		max-height:500px;
+	}
 }
 @media screen and (max-width:767px){
 	/*menuWrap*/
@@ -332,5 +336,8 @@
 	/*about*/
 	.meImg{
 		width:80vw;
+	}
+	.subDetContBottom .slider{
+		height:40vh;
 	}
 }
