@@ -1,0 +1,82 @@
+/* Portfolio2018 include css */
+@charset "utf-8";
+body{
+    font-family: 'NotoSans', sans-serif;
+	background:#fafbf6;
+	word-break: keep-all;
+}
+/*logo*/
+.logo{
+	position:fixed;
+	z-index:100;
+	top:2.55319vw;
+	left:2.55319vw;
+}
+.logo a{
+	position:relative;
+	width:80px;
+	height:80px;
+	display:block;
+}
+.logo h1{
+	position:absolute;
+	top:5px;
+	left:0;
+	font-size:18px;
+	font-weight:900;
+	line-height:24px;
+	color:#031da8;
+}
+.yCircle{
+	position:absolute;
+	top:0;
+	right:16px;
+	text-indent:-9999px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background:url(../images/common/logo.png)no-repeat;
+}
+/*intro*/
+.intro{
+	position:fixed;
+	z-index:100;
+	bottom:2.55319vw;
+	left:2.55319vw;
+}
+.intro p{
+	font-size:14px;
+	font-weight:900;
+	line-height:22px;
+	color:#031da8;
+}
+/*menuAbout*/
+.menuAbout{
+	position:fixed;
+	z-index:100;
+	top:2.71277vw;
+	right:2.55319vw;
+	text-align: right;
+}
+/*gnb*/
+.gnb{
+	position:fixed;
+	z-index:100;
+	top:12.8vw;
+	right:2.55319vw;
+	text-align: right;
+}
+.menuAbout a,.gnb li a{
+	font-size:18px;
+	font-weight:900;
+	line-height:24px;
+	color:#031da8;
+}
+
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+.intro,.menuAbout,.gnb{
+	display: block;
+}
