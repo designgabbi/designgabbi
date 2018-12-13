@@ -338,6 +338,14 @@
 		width:80vw;
 	}
 	.subDetContBottom .slider{
-		height:40vh;
+		height:30vh;
+		max-height:300px;
+	}
+	.subDetContBottom .slider div{
+		margin:0 1px;
+	}
+	.slick-dots li{
+		width:6px;
+		height:6px;
 	}
 }
