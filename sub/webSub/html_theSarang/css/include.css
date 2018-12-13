@@ -1,0 +1,323 @@
+/* The Sarang include css */
+@charset "utf-8";
+body{
+	font-family: 'NotoSans' , sans-serif;
+	word-break: keep-all;
+}
+
+/* header */
+#header{}
+.logo{
+	position:fixed;
+	top:2.55319vw;
+	left:2.55319vw;
+	z-index: 100;
+}
+.logo a{
+	height:100%;
+	display:block;
+	padding:10px;
+}
+.logo a img{
+	display:block;
+}
+/* sns */
+.sns{
+	width:7.44681vw;
+	position:fixed;
+	left:0;
+	bottom:2.55319vw;
+	z-index: 100;
+}
+.sns li{
+	display:block;
+	margin-bottom: 1.11111vw;
+	text-align: center;
+}
+.sns li a{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+}
+
+/* pannel */
+.pannel{
+	position:fixed;
+	top:2.21277vw;
+	right:2.21277vw;
+	text-align: center;
+	z-index:85;
+	cursor: pointer;
+}
+.pannel span{
+	height:100%;
+	display:block;
+	padding:10px;
+}
+.pannel span img{
+	display:block;
+}
+
+/* utill */
+.utill{
+	width:7.44681vw;
+	position:fixed;
+	right:0;
+	bottom:2.55319vw;
+	z-index:50;
+}
+.utill li{
+	display:block;
+	margin-bottom: 1.11111vw;
+	text-align: center;
+	position:relative;
+}
+.utill li a{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	color:#fff;
+}
+/* redbox */
+.redBox{
+	overflow-x: hidden;
+	background:#eb1f26;
+	font-size:0;
+	color:#fff;
+	border-radius:15px;
+	position:absolute;
+	bottom:0;
+	right:70%;
+	display:none;
+	transition: all 0.5s;
+}
+.utill li:hover .redBox{
+	display:block;
+}
+.redBoxCont{
+	margin:10px;
+}
+div.redBox a{
+	width:auto;
+	height:auto;
+	font-size:13px;
+	font-weight: bold;
+	line-height:1.2rem;
+}
+
+/* redbox: login */
+.loginBox,.myShopBox{
+	width:250px;
+}
+.inputLogin{
+	width:50%;
+	display:inline-block;
+}
+.inputLogin h5{
+	display:inline-block;
+	font-size:13px;
+	font-weight: bold;
+	vertical-align:middle;
+	padding-right:10px;
+}
+.inputLogin .inputBg{
+	width:70%;
+}
+.loginMenu{
+	width:100%;
+	padding-top:1.2vh;
+}
+.loginMenu p{
+	display:inline-block;
+	text-align: left;
+}
+.loginMenu p a{
+	padding-right:10px;
+}
+.btnSearchID:after{
+	content:"";
+	display:inline-block;
+	vertical-align: middle;
+	width:1px;
+	height:0.7rem;
+	background:#fff;
+	margin:0 0.5rem;
+}
+/* redbox : my shop */
+.myShopList{}
+.myShopList li{
+	font-size:13px;
+	font-weight: bold;
+	float:left;
+	margin-bottom:0;
+	width:33%;
+}
+.myShopList li a{
+	color:#fff;
+	padding:0.3vw;
+}
+.myShopList li a:after{
+	content:"";
+	display:block;
+	width:0;
+	height:1px;
+	background:#fff;
+	margin: 0 auto;
+	margin-top:0.5vh;
+	transition: all 0.5s;
+}
+.myShopList li a:hover:after{
+	width:100%;
+}
+
+/* redbox : infoBox */
+.infoBox{
+	width:40vw;
+	text-align: left;
+}
+.infoBox .redBoxCont{
+	margin:6vh 4vw;
+}
+.infoTop{
+	width:100%;
+	margin-bottom:4vh;
+}
+.infoBottom{
+	width:100%
+}
+.infoBottom div{
+	width:50%;
+	float:left;
+}
+.infoBottom div:first-child{
+	margin-bottom:0;
+}
+.infoBox h5{
+	font-size:1.1vw;
+	font-weight: normal;
+	padding-bottom:1vh;
+}
+.infoBox li{
+	display:inline-block;
+	font-size:13px;
+	font-weight: lighter;
+	vertical-align:middle;
+	padding-right:0.5vw;
+	margin-bottom:0;
+	margin-right:1vw;
+	line-height: 1.5rem;
+	text-align: left;
+}
+.infoBox li span{
+	font-weight: bold;
+}
+
+/* menu */
+.menu{
+	width:0;
+	height:100vh;
+	background:rgba(255,255,255,0.9);
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:105;
+	transition: 1s;
+	overflow-x:hidden;
+}
+.menuBg{
+	width:70vw;
+	height:100vh;
+	background:#eb1f26;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:10vh 8vw;
+	box-sizing:border-box;
+}
+/*search*/
+.search{
+	width:250px;
+	margin-left:1vw;
+}
+.inputBg{
+	width:80%;
+	padding:5px 15px;
+	box-sizing: border-box;
+	border-radius:15px;
+	background:rgba(255,255,255,0.9);
+	font-size:0;
+	display:inline-block;
+	vertical-align:middle;
+}
+.inputBg input{
+	width:100%;
+	background:none;
+	border:none;
+	color: #eb1f26;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #eb1f26;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #eb1f26;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #eb1f26;
+}
+.search a{
+	padding:4px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.search a img{
+	display:block;
+}
+/* mainMenu */
+.mainMenu{
+	margin-top:25vh;
+}
+.menuList{
+	width:8vw;
+	float:left;
+	margin-right:2vw;
+	margin-bottom:0;
+}
+.menuList li{
+	color:#fff;
+	font-size:14px;
+	font-weight: bold;
+	text-indent:1vw;
+}
+.menuList li a{
+	color:#fff;
+	padding:8px 0;
+	display:block;
+}
+li.menuTit{
+	font-size:12px;
+	font-weight: 100;
+}
+.menuTit:after{
+	content:"";
+	display:block;
+	width:17px;
+	height:4px;
+	background:#fff;
+	margin:5px 0;
+	margin-left:1vw;
+}
+.closebtn {
+    position: absolute;
+    top:2.21277vw;
+	right:2.21277vw;
+    font-size:50px;
+	height:5vh;
+	font-weight: 100;
+	line-height:1.5rem;
+	color:#fff;
+	display:block;
+	padding:10px;
+}
