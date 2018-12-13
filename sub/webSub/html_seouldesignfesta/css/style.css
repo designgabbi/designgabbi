@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* Default */
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+strong{
+    margin:0;
+    padding:0;
+}
+body{
+    min-width:1140px;
+    background: url(../images/bg.gif);
+    color:#fff;
+    font-family: 'NanumSquare', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.inner{
+    width:1140px;
+    margin:0 auto;
+}
+/* wrap */
+#wrap{
+    width:100%;
+}
+
+/* headerTop */
+.headerTop{
+    padding:20px 0;
+    border-bottom: 1px solid #888;
+}
+.headerTop .inner{
+    position: relative;
+}
+.logo{
+    width: 270px;
+    height: 32px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px;
+    font-size: 0;
+    margin:0 auto;
+}
+.logo a{
+    height: 100%;
+    display: block;
+}
+.date{
+    width:250px;
+    height: 24px;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 900;
+    vertical-align: middle;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+.date img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.date span{
+    padding: 0 10px;
+}
+.sns{
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+.sns li{
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 20px;
+}
+.sns li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.fbIcon{
+    background: url(../images/sns_facebook.png) no-repeat center center;
+}
+.emIcon{
+    background: url(../images/sns_mail.png) no-repeat center center;
+}
+
+/* gnb */
+.headerBottom{
+    height: 61px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #24231a;
+}
+.gnb{
+    font-size: 0;
+    text-align: center;
+}
+.gnb li{
+    font-size: 18px;
+    display: inline-block;
+    background: url(../images/gnb_line.png) no-repeat 0 center;
+    position: relative;
+}
+.gnb li a{
+    padding:20px 35px;
+    color:#fff;
+    display: block;
+}
+.gnb li.yellowTxt{
+    background: none;
+}
+.gnb li.yellowTxt a{
+    color: #ffe900;
+}
+
+/* lnb */
+.gnb li:hover .lnb{
+    display: block;
+}
+.lnb{
+    width:100%;
+    padding:15px;
+    box-sizing: border-box;
+    background: #ffe900;
+    text-align: left;
+    display: none;
+    position: absolute;
+    top : 100%;
+    z-index: 999;
+}
+.lnb li{
+    display: block;
+    font-size: 16px;
+    background: none;
+}
+.gnb .lnb li a{
+    padding:3px 0;
+    color: #2c2c2c;
+}
+.gnb .lnb li:hover a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* mainSlider */
+.mainSlider{
+    height:654px;
+    background: url(../images/main_visual.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* mainSlider left */
+.mainTitle{
+    width:300px;
+    text-align: center;
+}
+.mainTitle img{
+    padding: 50px 0 10px 0;
+    width:145px;
+}
+.mainTitle span{
+    font-size:26px;
+    padding-right:10px;
+}
+.mainTitle p{
+    font-size: 16px;
+    color: #fff;
+    line-height:24px;
+}
+.mainTitle p.yellowTxt{
+    padding-top:35px;
+    font-size: 18px;
+    color: #ffe900;
+}
+
+/* mainSlider right */
+.notice{
+    width:320px;
+    background:rgba(34,34,34,0.8);
+    padding:20px;
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    top:50px;
+}
+.notice h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffe900;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.plusBtn{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.plusBtn img{
+    display: block;
+}
+.notice ul li{
+    padding-top:30px;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice ul li a{
+    letter-spacing: -1px;
+    color: #fff;
+}
+.notice ul li p{
+    font-size:14px;
+    color: #999;
+    padding-top: 5px;
+}
+
+/* video */
+.mainRow1{
+    padding-bottom: 50px;
+}
+
+/* potluck party */
+.mainRow2{
+    padding:50px 0 100px 0;
+    background: url(../images/main_yline.png) no-repeat center center;
+    background-position: top;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* potluck party left */
+.row2Left{
+    float: left;
+}
+.row2Left a{
+    display: block;
+}
+.row2Left img{
+    display: block;
+}
+
+/* potluck party right */
+.row2Right{
+    float: left;
+    padding-top: 140px;
+}
+.row2Right p{
+    font-size: 16px;
+    line-height: 23px;
+    padding:20px;
+}
+.row2Right img{
+    display: block;
+}
+
+/* my brand */
+.mainRow3{
+    padding:140px 0 50px 0;
+    background: url(../images/main_bline.png) no-repeat center center;
+    background-position: top;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* my brand left */
+.row3Left{
+    float: left;
+    margin-right: 90px;
+}
+.row3Left img{
+    display: block;
+}
+
+/* my brand right */
+.row3Right{
+    float: left;
+}
+.row3Right a{
+    display: block;
+}
+.row3Right img{
+    display: block;
+}
+.row3Right p{
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* registeration */
+.mainRow4{
+    padding:150px 0 30px 0;
+    background: url(../images/main_yline.png) no-repeat center center;
+    background-position: top;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* registeration left */
+.row4Left{
+    float: left;
+    padding-top: 130px;
+}
+.row4Left a{
+    display: block;
+}
+.row4Left img{
+    display: block;
+}
+.row4Left p{
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* registeration right */
+.row4Right{
+    float: left;
+}
+.row4Right img{
+    display: block;
+}
+
+/* talk talk */
+.mainRow5{
+    padding:140px 0 50px 0;
+    background: url(../images/main_bline.png) no-repeat center center;
+    background-position: top;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* talk talk left */
+.row5Left{
+    float: left;
+}
+.row5Left ul{
+    float: left;
+}
+.row5Left ul li{
+    width: 165px;
+    height: 165px;
+    padding: 50px;
+    letter-spacing: -1px;
+    color: #2c2c2c;
+}
+.row5Left strong{
+    font-size: 15px;
+    font-weight: 900;
+}
+.row5Left strong:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: #2c2c2c;
+    margin: 5px 0 15px 0;;
+}
+.row5Left a{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #2c2c2c;
+}
+.row5Left h5{
+    font-weight: 700;
+    font-size: 19px;
+    padding-top: 10px;
+}
+.leftBox1{
+    background-color: #ffe600;
+}
+.leftBox2{
+    background-color: #2a3e8a;
+}
+.leftBox2 strong{
+    color: #fff;
+}
+.leftBox2 a{
+    color: #fff;
+}
+.rightBox1{
+    margin-top:50px;
+    background-color: #fff;
+}
+.rightBox2{
+    background: url(../images/sns_ticketbg.png) no-repeat;
+    overflow: hidden;
+}
+
+/* talk talk right */
+.row5Right{
+    float: left;
+    margin-left: 40px;
+}
+.row5Right a{
+    display: block;
+}
+.row5Right img{
+    display: block;
+}
+.row5Right p{
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* footer */
+#footer{
+    background: #222;
+    color: #666;
+    font-size: 14px;
+    padding:60px 0 20px 0;
+}
+.footerLogo{
+    float: left;
+}
+.footerInfo{
+    float: left;
+    padding-left:60px;
+}
+.footerInfo ul li{
+    float: left;
+    margin-right: 30px;
+}
+.footerInfo ul li:last-child{
+    margin-right: 0;
+}
+.footerInfo ul li img{
+    vertical-align: middle;
+}
+.footerInfo ul li a{
+    color: #666;
+    vertical-align: middle;
+}
+.footerInfo p{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.footerInfo h5{
+    font-size: 13px;
+    font-weight: bold;
+}
+.hostInfo{
+    float: right;
+}
+.hostInfo span{
+    float: left;
+    padding-right: 10px;
+}
+.hostInfo ul li{
+    float: left;
+    margin-bottom: 15px;
+    font-size: 0;
+}
+.hostInfo ul li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #999;
+    margin: 0 5px;
+}
+.hostInfo ul li:last-child:after{
+    display: none;
+}
+.hostInfo ul li a{
+    font-size: 14px;
+    font-weight: 900;
+    color: #999;
+}

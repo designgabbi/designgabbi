@@ -1,0 +1,726 @@
+@charset "utf-8";
+body{
+	font-family: 'NotoSans', sans-serif;
+}
+.inner{
+    width:1000px;
+    margin:0 auto;
+}
+/*헤더시작*/
+#header{
+    margin:0 auto;
+}
+#header .inner{
+   position:relative; 
+}
+#header .lnbBg{
+    width:100%;
+    height:0;
+    top:80px;
+    position:absolute;
+    left:0;
+    z-index:5;
+    background:rgba(45, 91, 121, 0.9);
+    transition:all 0.5s;
+}
+#header h1{
+    width:110px;
+    height:43px;
+    background:url(../images/sp_com.png) no-repeat;
+    background-position:-300px -5px;
+    text-indent:-9999px;
+    position:absolute;
+    top:20px;
+    left:0;
+}
+#header h1 a{
+	height: 100%;
+    display:block;
+}
+
+.gnb{
+    width:100%;
+    margin:0 auto;
+    padding:15px 0;
+    text-align:center;
+    font-size:0;
+}
+.gnb li{
+    width:120px;
+    height:50px;
+    line-height:50px;
+    display:inline-block;
+    text-align:center;
+    position:relative;
+    font-size:14px;
+}
+.gnb li a{
+	color:#2c2c2c;
+    padding-bottom:10px;
+}
+.gnb li a:after{
+    content:"";
+    display:block;
+    width:0;
+    height:1px;
+    background:#2d5b79;
+    margin:0 auto;
+    transition:all 0.5s;
+}
+.gnb li a:hover:after{
+    width:70px;
+}
+#header .gnb:hover .lnbBg{
+    left:0;
+    height:250px;
+}
+.lnb{
+    width:120px;
+    height:0;
+    overflow:hidden;
+    position:absolute;
+    left:0;    
+    z-index:10;
+    top:65px;
+    font-size:13px;
+    transition:all 0.5s;
+}
+.gnb:hover .lnb{
+    height:250px;
+}
+.lnb li{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    display:block;
+}
+.lnb li:first-child{
+    margin-top:20px;
+}
+.lnb li a{
+    color:#fff;
+    padding:0;
+    height:30px;
+    line-height:30px;
+}
+.lnb li a:hover{
+	border-bottom:1px solid #fff;
+}
+.utill{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size:0;
+    top:15px;
+}
+.utill li{
+    height:50px;
+    line-height:50px;
+    display:inline-block;
+    font-size:13px;
+}
+.utill li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#ccc;
+    margin:0 5px;
+}
+.utill li:last-child:after{
+    display:none;
+}
+.utill li a:hover{
+    text-decoration:underline;
+}
+
+/*메인슬라이더*/
+#mainSlider{
+    margin:0 auto;
+    position:relative;
+}
+#mainSlider img{
+    width:100%;
+    display:block;
+}
+.sliderBtn div{
+    width:25px;
+    height:46px;
+    position:absolute;
+    top:50%;
+    margin-top:-23px;
+    background:url(../images/sp_com.png) no-repeat;
+    text-indent:-9999px;
+    z-index:1;
+}
+.sliderBtn div a{
+    display:block;
+    height:100%;
+}
+.sliderBtn .prevBtn{
+    background-position:-129px -60px;
+    left:20px;
+}
+.sliderBtn .nextBtn{
+    background-position:-160px -60px;
+    right:20px;
+}
+
+
+
+
+/* 아이콘 시작 */
+.mainRow1{}
+.productIcons{
+    text-align: center;
+    padding: 30px 0;
+}
+.productIcons li{
+    display:inline-block;
+    padding:0 45px;
+}
+.productIcons li a{
+	color:#2c2c2c;
+}
+.productIcons span{
+    width:70px;
+    height:60px;
+    display:block;
+    background: url(../images/sp_com.png) no-repeat 0 -112px;
+    text-indent: -9999px;
+}
+.floorIc:hover span{
+    background-position:0 -178px;
+}
+.wallIc span{
+    background-position:-72px -112px;
+}
+.wallIc:hover span{
+    background-position:-72px -178px;
+}
+.doorIc span{
+    background-position:-144px -112px;
+}
+.doorIc:hover span{
+    background-position:-144px -178px;
+}
+.moldingIc span{
+    background-position:-216px -112px;
+}
+.moldingIc:hover span{
+    background-position:-216px -178px;
+}
+.sheetIc span{
+    background-position:-288px -112px;
+}
+.sheetIc:hover span{
+    background-position:-288px -178px;
+}
+.furnitureIc span{
+    background-position:-360px -112px;
+}
+.furnitureIc:hover span{
+    background-position:-360px -178px;
+}
+.mainRow1 ul li:hover a p{
+    color:#2d5b79;
+    font-weight: 500;
+}
+
+/* mainRow2 */
+.magazine{
+	display: block;
+    background:#dfd9d1;
+    padding:30px 0;
+}
+.magazine h2{
+    text-align: center;
+    font-size:30px;
+}
+.row2SubTit{
+    text-align: center;
+}
+
+.row2Con{
+    margin-top:30px;
+    position: relative;
+}
+.leftCon{
+    width:700px;
+    height:375px;
+    overflow: hidden;
+    float:left;
+    position: relative;
+}
+.leftCon img{
+    width:100%;
+    display:block;
+}
+.textBox{
+    width:200px;
+    height:100%;
+    padding:30px 15px;
+    box-sizing:border-box; /* 가로값, 세로값이 정해져있는 박스의 패딩과 보더라인을 모두 합치는 것. */
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    right:0;
+    color:#fff;
+}
+.textBox h3{
+    font-size:13px;
+    font-weight: normal;
+}
+.textTitle{
+    font-size:20px;
+    margin:20px 0;
+}
+.textTitle span{
+    font-weight: 500;
+}
+.textSub{
+    font-size:13px;
+}
+.moreBtn{
+    width:170px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size:12px;
+    position:absolute;
+    bottom:30px;
+}
+.moreBtn a{
+    color:#fff;
+    padding:10px 0;
+    display: block;
+}
+.rightCon{
+    width:300px;
+    height:375px;
+    float:left;
+    background:#fff;
+    padding:20px;
+    box-sizing: border-box;
+}
+.rightCon ul{}
+.rightCon ul li{
+    margin-bottom: 18px;
+}
+.rightCon ul li a{
+    color:#333;
+}
+.rightCon ul li a img{
+    width:70px;
+    height: 70px;
+    vertical-align: middle;
+}
+.listText{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.listNav{
+    font-size: 14px;
+    font-weight: 500;
+}
+.listTitle{}
+
+/* magazine 버튼 */
+.row2Con .sliderBtn div{
+    width:25px;
+    height:46px;
+    position:absolute;
+    top:50%;
+    margin-top:-23px;
+    background:url(../images/sp_com.png) no-repeat;
+    text-indent:-9999px;
+    z-index:1;
+}
+.row2Con .sliderBtn div a{
+    display:block;
+    height:100%;
+}
+.row2Con .sliderBtn div.prevBtn{
+    background-position:-129px -60px;
+    left:-45px;
+}
+.row2Con .sliderBtn div.nextBtn{
+    background-position:-160px -60px;
+    right:-45px;
+}
+
+
+
+/* mainRow3 */
+.keyLink{
+    padding:30px 0;
+}
+.keyLink div{
+    text-align: center;
+	width:235px;
+    height:235px;
+    margin-right:20px;
+    float: left;
+}
+.gallery{
+    background:url(../images/mainrow3_img1.jpg) no-repeat;
+}
+.blog{
+    background:url(../images/mainrow3_img2.jpg) no-repeat;
+}
+.searchStore{
+    background:url(../images/mainrow3_img3.jpg) no-repeat;
+}
+.searchProduct{
+    background-color: #ccc;
+}
+.keyLink .last{
+    margin-right: 0;
+}
+.keyLink a{
+    color:#fff;
+    display: block;
+    height: 100%;
+    background:rgba(45,91,121,0);
+    transition: background 0.5s;
+}
+.keyLink div a:hover{
+    color:#fff;
+    background:rgba(45,91,121,0.7);
+}
+.keyLink div a:hover p{
+    display: block;
+}
+.keyLink .blog a{
+    color:#333;
+}
+.keyLink h3{
+    padding-top:80px;
+	font-weight:normal;
+}
+.keyLink p{
+    padding-top:10px;
+    font-size: 13px;
+    display: none;
+}
+.keyLink div:hover p{
+	display: block;
+}
+
+.searchProduct{
+    padding:30px 20px;
+    box-sizing: border-box;
+}
+.searchProduct h3{
+    padding-top:0;
+}
+.searchProduct select,.searchProduct input{
+    border:0;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    background: #fff;
+    -webkit-appearance:none;
+    appearance:none;
+    padding:0 10px;
+    box-sizing: border-box;
+    
+}
+.searchProduct select{
+    background: #fff url(../images/arrow_btn.png) no-repeat 95% center;
+    background-size:10px;
+    margin-bottom: 5px;
+    margin-top:20px;
+}
+.searchProduct input{}
+.searchProduct button{
+    background:#2D5B79;
+    border: 0;
+    color:#fff;
+    width:100%;
+    padding:10px 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* 익스플로러 select */
+.searchProduct select::-ms-expand{
+    display:none;
+}
+
+
+
+
+/* mainRow4*/
+.board{
+	display: block;
+    margin-bottom:50px;
+}
+
+/* mainRow4 공통*/
+.boardBox{
+    width:490px;
+    height:175px;
+    margin-right:20px;
+    float:left;
+    background:#f2f0ed;
+    position: relative;
+    line-height: 25px;
+}
+.boardBox.last{
+    margin-right:0;
+}
+.boardBox h2{
+    text-align: center;
+    font-size: 20px;
+    color:#2d5b79;
+    padding:15px 0;
+    border-bottom: 1px solid #fff;
+}
+.plusBtn{
+    width:24px;
+    height:24px;
+    background: #fff url(../images/sp_com.png) no-repeat -199px -64px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    position: absolute;
+    top:18px;
+    right:18px;
+}
+.plusBtn a{
+    display: block;
+}
+
+/* mainRow4 공지 */
+.noticeBox{
+    width:50%;
+    padding:20px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 13px;
+    border-right:1px solid #fff;
+}
+.noticeBox.last{
+    border-right: 0;
+}
+.noticeBox a:hover{
+    text-decoration: underline;
+}
+.noticeBox p{
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#333;
+}
+.noticeBox span{
+    color:#999;
+}
+
+/* mainRow4 뉴스*/
+.newsList{
+    font-size:13px;
+}
+.newsList li{
+    padding:0 20px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+}
+.newsList li:last-child{
+    border-bottom: 0;
+}
+.newsList a{
+    width:370px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    color:#333;
+}
+.newsList span{
+    color:#999;
+}
+
+
+
+
+/* mainRow5 */
+.business{
+    background: url(../images/mainrow4_bg.jpg) no-repeat;
+    padding:50px 0;
+}
+
+.busiBox{
+    width: 235px;
+    height: 327px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.busiBox a{
+    color: #333;
+    height: 100%;
+    display: block;
+}
+.busiBox h3{
+    padding-top: 250px;
+}
+.busiBox p{
+	display: block;
+    font-size: 13px;
+}
+
+.busiBox1{
+    background: url(../images/mainrow5_img1.jpg) no-repeat;
+    background-size: 100%;
+}
+.busiBox2{
+    background: url(../images/mainrow5_img2.jpg) no-repeat;
+    background-size: 100%;}
+.busiBox3{
+    background: url(../images/mainrow5_img3.jpg) no-repeat;
+    background-size: 100%;}
+.busiBox4{
+    background: url(../images/mainrow5_img4.jpg.jpg) no-repeat;
+    background-size: 100%;
+    margin-right: 0;
+}
+
+
+
+
+/* 푸터 */
+#footer{
+    letter-spacing: -1px;
+}
+
+/* 푸터 탑 */
+.footerTop{
+    background: #383f43;
+}
+.footerTop .inner{
+    position: relative;
+}
+.footerMenu{
+    font-size: 14px;
+    font-weight: 200;
+    padding:20px 0;
+	display:inline-block;
+}
+.footerMenu li{
+    display:inline-block;
+	vertical-align: middle;
+}
+.footerMenu li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #999;
+    margin: 0 5px;
+}
+.lineNone li:last-child:after{
+    display: none;
+}
+.footerMenu li a{
+    color: #fff;
+}
+.footerMenu li:hover a{
+    text-decoration: underline;
+}
+.footerRight{
+    position: absolute;
+    top:50%;
+    margin-top:-22px;
+    right:0;
+}
+.footerRight div{
+    display:inline-block;
+	vertical-align:middle;
+    margin-left:7px;
+}
+.callNumber{
+    height:44px;
+    line-height: 44px;
+    background: #2a3033;
+    color: #fff;
+    font-size: 23px;
+    padding:0 15px;
+}
+.callNumber span{
+	font-size: 14px;
+}
+.familySite{}
+.familySite select{
+    border: 0;
+    width: 200px;
+    height:44px;
+    line-height: 45px;
+	font-size:14px;
+    -webkit-appearance:none;
+    background: #fff url(../images/arrow_btn.png) no-repeat 95% center;
+    background-size: 10px;
+    padding:0 10px;
+    box-sizing: border-box;
+	text-indent:1em;
+}
+.familySite option{}
+
+/* 푸터 바틈 */
+.footerBottom{
+    background: #4c5459;
+    color:#fff;
+    text-align: center;
+    padding:40px 0;
+    line-height: 20px;
+}
+.footerLogo{
+	display:block; /*mobile*/
+    width:130px;
+    height:50px;
+    background: url(../images/sp_com.png) no-repeat -150px 0;
+    text-indent: -9999px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+.footerBottom span{
+	display:inline-block;
+    font-size:14px;
+}
+.footerBottom span:after{
+    content: "";
+    display: inline-block; /*    라인 양 옆 공간이 똑같지 않은건 폰트 사이즈가 0이 아니라서!!!    */
+    width: 1px;
+    height: 8px;
+    background: #999;
+    margin: 0 10px;
+}
+.footerBottom span.last:after{
+    display:none;
+}
+
+.footerBottom p{
+    font-size:14px;
+	font-weight: 300;
+}
+
+/* 반응형 관련 */
+/*mobile header*/
+.pannel{
+    display:none;
+}
+/*mobile mainSlider*/
+.sliderTitle{
+	display: none;
+}
+
+/*mobile board*/
+.mBoard{
+	display: none;
+}
+/*mobile keyLink*/
+.mSearchProduct{
+	display:none;
+}
