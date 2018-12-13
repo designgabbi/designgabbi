@@ -1,0 +1,702 @@
+/* Mlesna Mobile Main CSS */
+@charset "utf-8";
+@media screen and (max-width:768px){
+	body{
+		min-width:100%;
+		width:100%;
+	}
+	p,h6{
+	font-size:13px;
+	}
+	.inner{
+		width:100%;
+	}
+
+	/* mobile include */
+	/*header*/
+	#header{
+		width:100%;
+		padding:16px 0;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:1000;
+	}
+	#header h1{
+		position:static;
+		width:120px;
+		height:28px;
+		background:url(../images/common/m_logo.png) no-repeat;
+		background-size:100% 100%;
+		margin:0 auto;
+	}
+	#header h1 a{
+		display:block;
+		height: 100%;
+	}
+	.gnb{
+		display:none;
+	}
+	
+	/* accordion */
+	#mySidenav{
+		display:block;
+		width:0;
+		height:100%;
+		background:rgba(255,255,255,0.95);
+		position:fixed;
+		top:0;
+		left:0;
+		z-index: 5;
+		overflow-x:hidden;
+		transition:all 0.5s;
+	}
+	.accordion{
+		width:200px;
+		display:block;
+	}
+	.accordion li{
+		width:200px;
+		display:block;
+		font-size:16px;
+		text-indent:10px;
+		font-family:'Lato',sans-serif;
+		font-weight: normal;
+	}
+	.accordion li a,.accordion span{
+		padding:10px 10px;
+		color:#333;
+		display:block;
+	}
+	.accorMenuList{}
+	.accorMenuList li{
+	}
+	.accorMenuList li a{
+		text-indent:30px;
+	}
+	
+	/*pannel*/
+	.pannel{
+		display:block;
+		background:url(../images/common/ic_pannel.png)no-repeat center center;
+		background-size:100%;
+		width:25px;
+		height:25px;
+		text-indent:-9999px;
+		position: absolute;
+		top:2px;
+		left:15px;
+		cursor:pointer;
+	}
+	.pannel span{
+		display:block;
+		height:100%;
+	}
+	.closebtn{
+		display:block;
+		color:#333;
+		font-size:25px;
+		line-height:1em;
+		width:30px;
+		height:30px;
+		margin-bottom:10px;
+		background:#fff;
+		padding-top:16px;
+		padding-left:15px;
+	}
+	/*container*/
+	#container{
+		padding-top:60px;
+	}
+	/*footer*/
+	#footer{
+		padding:30px 20px;
+        text-align: center;
+	}
+    #footer .inner{
+        padding:0;
+    }
+    .footLeft{
+        width:100%;
+    }
+	.footLeft h1{
+		height:32px;
+		margin:0 auto;
+	}
+    .footRight{
+        width:100%;
+    }
+    .footRight ul li{
+        font-size:12px;
+    }
+    .footRight p{
+        font-size:12px;
+    }
+	/*mobile gold box text*/
+    .goldBox{
+        padding:30px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .goldBox h4{
+        font-size:16px;
+        line-height: 1em;
+        color:#d1a054;
+        font-family: 'AritaBuri',serif;
+        font-weight: 900;
+    }
+    .goldBox p{
+        color:#333;
+        font-size:13px;
+        padding:15px 0 10px 0;
+    }
+    .goldBox h5{
+        color:#d1a054;
+        font-size:13px;
+        line-height: 1em;
+        font-family:'Lato',sans-serif;
+        font-weight: 600;
+    }
+	
+	
+	
+	/*container*/
+	/*mainSlider*/
+	.mainSlider{
+		padding:0;
+	}
+	.mainSlider .inner{
+		height:595px;
+	}
+	.imgHerb1{
+		width:217px;
+		position: absolute;
+		top:-34px;
+		left:-40px;
+	}
+	.imgHerb2{
+		width:174px;
+		position: absolute;
+		bottom:46px;
+		right:-40px;
+	}
+	.imgCup{
+		width:239px;
+		position: absolute;
+		bottom:-5px;
+		left:-30px;
+	}
+	.imgPot{
+		width:215px;
+		position: absolute;
+		top:-74px;
+		right:-67px;
+	}
+	.mainTitle{
+		width:45vw;
+		height:240px;
+	}
+	.mainTitle h2{
+		font-size:12px;
+	}
+	.mainTitleWeb{
+		display:none;
+	}
+	.mainTitleMobile{
+		display:block;
+	}
+	.mainTitle .goldLine{
+		display:none;
+	}
+	/*aboutUs*/
+	.aboutUs{
+		width:100%;
+		background:url(../images/main/bg_main_aboutUs.jpg)no-repeat;
+		background-position: center center;
+		background-size:cover;
+		text-align: center;
+	}
+	.aboutUs a{
+		color:#eee;
+		display:block;
+		padding:70px 20px;
+	}
+	.aboutUs .titLine{
+		padding-bottom:20px;
+	}
+	.aboutUs h3{
+		font-size:18px;
+	}
+	/*blend*/
+	.blend{
+		background:#fff;
+	}
+	.blend .inner{
+		width:360px;
+		padding:0 15px;
+		padding-top:60px;
+		box-sizing: border-box;
+		background:url(../images/m_images/m_blend.png) no-repeat;
+		background-size: 100%;
+		margin:0 auto;
+	}
+	.blendRow{
+		width:100%;
+		padding-bottom:35px;
+        position:static;
+	}
+	.blendRow li{
+		width:65px;
+		height:65px;
+		padding-right: 23px;
+	}
+    .icBlend6,.icBlend8,li.icBlend9,.icBlend12{
+        padding-left:0;
+    }
+	.blendTxt{
+        position:static;
+		height:50px;
+		display:inline-block;
+		vertical-align:middle;
+        -ms-transform: rotate(0); /* IE 9 */
+        -webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+        transform: rotate(0);
+	}
+	.blendTxt img{
+		height:100%;
+	}
+	.weImg{
+		padding-right:52px;
+	}
+	.blendImg{
+		padding-right:16px;
+	}
+	.theImg{
+		padding-right:21px;
+	}
+	.bestImg{
+		padding-right:0;
+		padding-left:59px;
+	}
+	/*prd*/
+	.prd{
+        padding:0;
+    }
+	.prd .inner{
+        width:100%;
+    }
+	.prdBox{
+        position:static;
+		width:100%;
+        height:auto;
+        margin-bottom:0;
+	}
+	.prdBox .goldBox{
+		padding:30px 20px;
+	}
+    .prdBox2{
+        margin-left:0;
+    }
+	.prdBox a{
+		display:block;
+		height:100%;
+		padding:38px 0;
+	}
+	.prdTxt{
+        position:static;
+		width:250px;
+		height:175px;
+		background:url(../images/m_images/img_mPrdTxtBox.png) no-repeat;
+		background-position: center center;
+		background-size:100% 100%;
+		margin:0 auto;
+	}
+	/*video*/
+	.video{
+        width:100%;
+        height:auto;
+        padding-bottom:0;
+	}
+	.video video{
+		width:100%;
+		display:block;
+	}
+
+	/* mobile sub */
+
+	/* sub banner */
+	.subBnr{
+		color:#fff;
+		text-align: center;
+		padding:30px 0;
+		box-sizing: border-box;
+	}
+	.aboutUsBnr{
+		background: url(../images/sub/bg_bnr_aboutUs.jpg) no-repeat center center;
+		background-size:cover;
+	}
+	.teaStoryBnr{
+		background:url(../images/sub/bg_bnr_teaStory.jpg) no-repeat center center;
+		background-size:cover;
+	}
+	.contactUsBnr{
+		background:url(../images/sub/bg_bnr_contactUs.jpg) no-repeat center center;
+		background-size:cover;
+	}
+	.engTit{
+		padding-bottom:10px;
+	}
+	.engTit h2{
+		color:#d1a054;
+		font-size:13px;
+		font-family:'Lato',sans-serif;
+		font-weight: 600;
+	}
+	.subBnr h3{
+		font-size:20px;
+		font-family: 'AritaBuri',serif;
+		font-weight: 900;
+	}
+	.subBnr span{
+		display:none;
+	}
+	
+	/*subRow*/
+	.subRow{
+		padding:20px 15px;
+		box-sizing: border-box;
+	}
+	/* sub rowTxt */
+	.rowTxt{
+		padding:0 5px;
+		padding-top:30px;
+	}
+	.rowTxt h4{
+		color:#006603;
+		font-size:20px;
+		line-height: 1em;
+		padding-bottom:10px;
+		font-family: 'AritaBuri',serif;
+		font-weight: 900;
+	}
+	
+	/* sub 01 : about us */
+	.sub01Row1{
+		background:#eee;
+	}
+	.sub01Row1 img{
+		width:100%;
+		display:block;
+	}
+	.sub01Row2{
+		padding:20px 0;
+	}
+	.sub01Row2 ul{
+		padding:0 20px;
+	}
+	.sub01Row2 ul li{
+		width:100px;
+		text-align: center;
+		float:left;
+		padding:20px;
+	}
+	.sub01Row2 ul li img{
+		width:100%;
+	}
+	.sub01Row2 ul li h6{
+		font-size:11px;
+		font-weight: normal;
+	}
+	
+	/* sub 02 : tea story : why ceylon tea*/
+	.sub02Row1 img,.sub02Row2 img{
+		width:100%;
+		display:block;
+		margin:0 auto;
+	}
+	.sub02Row2{
+		padding-top:0;
+	}
+	.sub02Row2 .lionLogo{
+		width:112px;
+		padding-top:30px;
+	}
+	
+	/* sub 03 : tea story : regionMap */
+	.sub03Row1{
+		background:#214a22;
+	}
+	.regionMap{
+		width:330px;
+		height:425px;
+		background:url(../images/sub/img_region.png)no-repeat;
+		background-size:100% 100%;
+		margin:0 auto;
+		position:relative;
+	}
+	.regionMap li{
+		width:120px;
+		height:120px;
+		font-size:16px;
+		font-family: 'AritaBuri',serif;
+		font-weight: 900;
+		border-radius: 50% 50%;
+		text-align: center;
+	}
+	.regionMap li:hover{
+		background:#d1a054;
+	}
+	.icKandy{
+		position:absolute;
+		top:130px;
+		left:80px;
+	}
+	.icNuwaraEliya{
+		position:absolute;
+		top:200px;
+		right:30px;
+	}
+	.icDimbula{
+		position:absolute;
+		top:235px;
+		left:80px;
+	}
+	.icUva{
+		position:absolute;
+		bottom:0;
+		right:10px;
+	}
+	.icRuhuna{
+		position:absolute;
+		bottom:-40px;
+		left:110px;
+	}
+	.regionMap li div{
+		height:100%;
+		display:block;
+		color:#eee;
+		cursor: pointer;
+	}
+	.regionMap li div span{
+		width:100%;
+		height:65%;
+		display:block;
+		color:#eee;
+		text-indent: -9999px;
+	}
+	.icKandy span{
+		background:url(../images/sub/ic_kandy.png) no-repeat center bottom;
+		background-size:55%;
+	}
+	.regionMap .icNuwaraEliya span{
+		height:68%;
+		background:url(../images/sub/ic_nuwaraEliya.png) no-repeat 70% bottom;
+		background-size:50%;
+	}
+	.icDimbula span{
+		background:url(../images/sub/ic_dimbula.png) no-repeat 53% bottom;
+		background-size:55%;
+	}
+	.icUva span{
+		background:url(../images/sub/ic_uva.png) no-repeat center bottom;
+		background-size:55%;
+	}
+	.icRuhuna span{
+		background:url(../images/sub/ic_ruhuna.png) no-repeat center bottom;
+		background-size:55%;
+	}
+	.regionMap h5{
+		padding-top:5px;
+	}
+	.sub03Row1 .rowTxtBox{
+		padding-top:50px;
+		text-align: center;
+	}
+	.sub03Row1 .rowTxt{
+	}
+	.sub03Row1 .rowTxt h4{
+		color:#eee;
+		line-height:1.5em;
+		padding-bottom:0;
+	}
+	.sub03Row1 .rowTxt h5{
+		font-weight: normal;
+		font-family:'Lato', sans-serif;
+		color:#ddd;
+		padding-bottom:1em;
+	}
+	.sub03Row1 .rowTxt p{
+		color:#eee;
+	}
+	.hashTag{
+		padding:1em 0;
+	}
+	.hashTag li{
+		color:#eee;
+		padding:0.5em 1em;
+		font-size:12px;
+		line-height:1em;
+		display:inline-block;
+		border-radius:1em;
+		background:#d1a054;
+	}
+	
+	
+	/* sub 04 : Tea Story : How to make Black Tea */
+	.howToStep{
+		display:none;
+	}
+	.sub04Row.subRow{
+		padding-bottom:0;
+	}
+	.sub04Row.subRow:last-child{
+		padding-bottom:30px;
+	}
+	.sub04Row img{
+		width:295px;
+		display:block;
+		margin:0 auto;
+		padding-bottom:50px;
+	}
+	.sub04Row h5{
+		padding-bottom:1em;
+	}
+	.sub04Row .goldBox{
+		max-width:320px;
+		margin:0 auto;
+	}
+	.sub04Row1Box{
+		background:url(/images/m_images/img_mHowToBox00.png)no-repeat center center;
+		background-size:100% 100%;
+	}
+	.sub04Row2Box{
+		background:url(/images/m_images/img_mHowToBox01.png)no-repeat center center;
+		background-size:100% 100%;
+	}
+	.sub04Row3Box{
+		background:url(/images/m_images/img_mHowToBox02.png)no-repeat center center;
+		background-size:100% 100%;
+	}
+	.sub04Row4Box{
+		background:url(/images/m_images/img_mHowToBox03.png)no-repeat center center;
+		background-size:100% 100%;
+	}
+	.sub04Row5Box{
+		background:url(/images/m_images/img_mHowToBox04.png)no-repeat center center;
+		background-size:100% 100%;
+	}
+	.sub04Row .goldBox p{
+		padding-bottom:0;
+	}
+	
+	/* sub08 : contact us */
+	.sub08Row1{}
+	.sub08Row1 img{
+		width:100%;
+		display:block;
+	}
+	.linkMap{
+		margin:15px auto;
+	}
+	.contactInfo{
+		border-top:4px double #d1a054;
+		border-bottom:4px double #d1a054;
+	}
+	.contactInfo li{
+		padding:1em 0;
+		border-bottom:1px solid #d1a054;
+	}
+	.contactInfo li:last-child{
+		border-bottom:0;
+	}
+	.contactInfo li img{
+		display:inline-block;
+		vertical-align:middle;
+		padding:10px;
+	}
+	.contactInfo li p{
+		width:80%;
+		display:inline-block;
+		vertical-align:middle;
+		padding-right:0;
+	}
+	.contactInfo li span{
+		font-size:13px;
+		font-weight: normal;
+		color:#333;
+		vertical-align:middle;
+		padding-right:5px;
+	}
+	.contactInfo li span{
+		border-right:1px solid #d1a054;
+	}
+	.contactInfo li span:last-child{
+		border-right:0;
+	}
+	.icLocation img{
+		width:18px;
+		height:27px;
+	}
+	.icTel img{
+		width:20px;
+		height:25px;
+	}
+}
+@media screen and (max-width:550px){
+	.mainTitle{
+		width:63vw;
+	}
+}
+@media screen and (max-width:360px){
+	.mainTitle{
+		width:68vw;
+	}
+	.contactInfo .icLocation p{ 
+		padding-right:20px;
+		box-sizing: border-box;
+	}
+}
+@media screen and (max-width:320px){
+	.aboutUs p{
+		padding:10px 30px 30px 30px;
+	}
+	.blend .inner{
+		width:320px;
+	}
+	.blendRow{
+		padding-bottom:27px;
+	}
+	.blendRow li{
+		width:60px;
+		height:60px;
+		padding-right:16px;
+	}
+	.blendTxt{
+		height:40px;
+	}
+	.blendImg{
+		padding-right:31px;
+	}
+	.theImg{
+		padding-right:29px;
+	}
+	/*sub*/
+	.regionMap{
+		width:100%;
+	}
+	.icKandy{
+		left:70px;
+	}
+	.icNuwaraEliya{
+		right:20px;
+	}
+	.icDimbula{
+		left:70px;
+	}
+	.icUva{
+		right:5px;
+	}
+	.icRuhuna{
+		left:80px;
+	}
+}

@@ -1,0 +1,37 @@
+/*Lato*/
+@font-face {
+	font-family: 'Lato';
+	font-weight: 500;
+	font-style: normal;
+	src:local('Lato'),
+		url('lato-medium.eot');
+	src:url('lato-medium.eot?#iefix') format('embedded-opentype'), 
+	  	url('lato-medium.woff2') format('woff2'), 
+		url('lato-medium.woff') format('woff'), 
+		url('lato-medium.tt') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-weight: 600;
+	font-style: normal;
+	src:local('Lato'),
+		url('lato-semibold.eot');
+	src:url('lato-semibold.eot?#iefix') format('embedded-opentype'), 
+		url('lato-semibold.woff2') format('woff2'), 
+		url('lato-semibold.woff') format('woff'), 
+		url('lato-semibold.ttf') format('truetype');
+	 }
+
+/*AritaBuri*/
+@font-face {
+    font-family: 'AritaBuri';
+    font-style: normal;
+    font-weight: 900;
+    src: local('AritaBuri'),
+        url('AritaBuriB.woff2') format('woff2'), 
+        url('AritaBuriB.woff') format('woff'),
+        url('AritaBuriB.ttf') format('truetype'),
+        url('AritaBuriB.otf') format('opentype'),
+        url('AritaBuriB.eot') format('embedded-opentype');
+}
