@@ -536,7 +536,9 @@
 	padding-bottom:150px;
 	box-sizing:border-box;
 }
-.grid-item{}
+.grid-item{
+	font-size:0;
+}
 .grid-item img{
 	width:100%;
 	display:block;
