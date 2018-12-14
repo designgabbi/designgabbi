@@ -78,7 +78,7 @@
 		width:calc(25% - 8px);
 		margin:0 4px;
 	}
-	.aboutRow6 ul li,.aboutRow6 ul li:first-child{
+	.aboutRow7 ul li,.aboutRow7 ul li:first-child{
 		margin:10px;
 	}
 	/*sub detail*/
@@ -140,7 +140,7 @@
 		margin:0;
 		line-height:2rem;
 	}
-	.aboutRow6 ul li,.aboutRow6 ul li:first-child,.aboutRow6 ul li:last-child{
+	.aboutRow7 ul li,.aboutRow7 ul li:first-child,.aboutRow7 ul li:last-child{
 		margin:10px;
 	}
 	/*sub detail*/
