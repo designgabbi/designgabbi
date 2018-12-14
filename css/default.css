@@ -24,4 +24,5 @@ a{
 img {
 	text-decoration: none;
 	border: 0px;
+	border-style:none;
 }
