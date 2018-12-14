@@ -345,12 +345,10 @@
   from {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
-	  opacity:0;
   }
   to {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
-	  opacity:1;
   }
 }
 @-webkit-keyframes ani2 {
@@ -367,12 +365,10 @@
   from {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
-	  opacity:1;
   }
   to {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
-	  opacity:0;
   }
 }
 .menuBoxBg img{
