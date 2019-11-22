@@ -90,8 +90,6 @@
 	position:relative;
 	display:inline-block;
 	vertical-align:middle;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
 }
 .mainBnrBox img{
 	width:100%;
