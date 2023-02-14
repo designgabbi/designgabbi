@@ -199,19 +199,19 @@
 	font-size:15px;
 	font-weight:700;
 }
-/*mnWeb*/
-.mnWebBg{
+/*mnUiuxBg*/
+.mnUiuxBg{
 	top:37px;
 	left:8vw;
 }
-.mnWeb{
+.mnUiux{
 	width:220px;
 	height:260px;
-	background:url(../images/main/img_titBgBlue_web.png)no-repeat center center;
+	background:url(../images/main/img_titBgBlue_uiux.png)no-repeat center center;
 	top:85px;
 	left:20vw;
 }
-.mnWeb .menuTit{
+.mnUiux .menuTit{
 	top:85px;
 	right:55px;
 }
@@ -335,12 +335,10 @@
   from {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
-	  opacity:0;
   }
   to {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
-	  opacity:1;
   }
 }
 @keyframes ani {
@@ -359,12 +357,10 @@
   from {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
-	  opacity:1;
   }
   to {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
-	  opacity:0;
   }
 }
 @keyframes ani2 {
@@ -389,7 +385,7 @@
 /*ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT*/
 .meImg{
 	text-indent:-9999px;
-	width:45vw;
+	width:30vw;
 	overflow:hidden;
 	position:absolute;
 	top:-20px;
@@ -444,7 +440,7 @@
 	margin-top:100px;
 	padding-left:20px;
 }
-.aboutRow7,.aboutRow8{
+.aboutRow6,.aboutRow7{
 	padding-right:6.25vw;
 }
 .aboutRow h3{
@@ -487,7 +483,7 @@
 .aboutRow ul li:last-child{
 	margin-right:0;
 }
-.aboutRow7 ul li:first-child{
+.aboutRow6 ul li:first-child{
 	margin: 10px;
 	font-weight: 400;
 }
@@ -536,9 +532,7 @@
 	padding-bottom:150px;
 	box-sizing:border-box;
 }
-.grid-item{
-	font-size:0;
-}
+.grid-item{}
 .grid-item img{
 	width:100%;
 	display:block;
@@ -612,6 +606,7 @@
 	font-size:21px;
 	font-weight: 900;
 	line-height:1.7rem;
+    margin-bottom: 16px;
 }
 .subDetTxt{
 	padding-top:50px;
@@ -685,7 +680,7 @@
 
 /* ARROW BTN ANIMATION */
 .animated-arrow{
-	padding:20px 0;
+	padding-top:20px;
 }
 .the-arrow {
   width: 64px;
@@ -695,6 +690,7 @@
   position: absolute;
   top: 60%;
   left: 0;
+    margin-top: 0.5em;
 }
 .the-arrow.-left > .shaft {
   width: 0;
@@ -764,6 +760,7 @@
   font-size: 14px ;
   position: relative;
   transition: all 0.2s;
+    width: 100%;
 }
 .animated-arrow:hover {
   color: #f49f02;
@@ -813,6 +810,12 @@
   display: flex;
   align-items: center;
   transition: all 0.2s;
+}
+.animated-arrow > .main > img {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    padding-right: 8px;
 }
 .animated-arrow > .main > .text {
   margin: 0 16px 0 0;
@@ -902,8 +905,8 @@
 /* SUB VIEW & DETAIL BACKGROUND */
 /* SUB VIEW & DETAIL BACKGROUND */
 /* SUB VIEW & DETAIL BACKGROUND */
-.webBg{
-	background:url(../images/sub/web/img_titBgYellow_web.png)no-repeat 50% 70px;
+.uiuxBg{
+	background:url(../images/sub/uiux/img_titBgYellow_uiux.png)no-repeat 50% 70px;
 }
 .graphicBg{
 	background:url(../images/sub/graphic/img_titBgYellow_graphic.png)no-repeat 50% 125px;
