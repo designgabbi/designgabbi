@@ -1,0 +1,231 @@
+/* Mlesna Web Css */
+@charset "utf-8";
+/*mainSlider*/
+.mainSlider{
+	padding-bottom:70px;
+}
+.mainSlider .inner{
+	height:580px;
+	background:url(../images/main/bg_main.jpg)no-repeat center center;
+	background-size:cover;
+	overflow:hidden;
+	position:relative;
+}
+.mainSlider img{
+	width:100%;
+}
+.imgHerb1{
+	width:270px;
+	position: absolute;
+	top:15px;
+	left:60px;
+}
+.imgHerb2{
+	width:270px;
+	position: absolute;
+	bottom:-10px;
+	right:30px;
+}
+.imgCup{
+	width:350px;
+	position: absolute;
+	bottom:-5px;
+	left:40px;
+}
+.imgPot{
+	width:330px;
+	position: absolute;
+	top:0;
+	right:30px;
+}
+.mainTitle{
+	width:530px;
+	height:130px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+.mainTitle h2{
+	font-size:16px;
+	line-height: 1em;
+	letter-spacing:2px;
+	color:#006603;
+	padding-bottom:1em;
+	text-align: center;
+}
+.mainTitle .goldLine{
+	display:inline-block;
+}
+.mainTitleWeb{
+	display:block;
+}
+.mainTitleMobile{
+	display:none;
+}
+/*aboutUs*/
+.aboutUs{
+	width:100%;
+	background:url(../images/main/bg_main_aboutUs.jpg)no-repeat;
+	background-position: center center;
+	background-size:cover;
+	text-align: center;
+}
+.aboutUs a{
+	color:#eee;
+	display:block;
+	padding:70px 0;
+}
+.aboutUs .titLine{
+	padding-bottom:20px;
+}
+.aboutUs h3{
+	font-size:30px;
+}
+.aboutUs p{
+	font-weight: 300;
+	padding:10px 0 30px 0;
+	color:#eee;
+}
+.aboutUs h5{
+	font-size:13px;
+	line-height: 1em;
+}
+
+/* blend */
+.blend{
+    background:url(../images/main/bg_main_blend.jpg) no-repeat center top;
+    background-size:1920px 2060px;
+}
+.blend .inner{
+    padding-top:380px;
+    padding-bottom:120px;
+}
+.blendRow{
+    width:800px;
+    margin:0 auto;
+    font-size:0;
+    padding-bottom:90px;
+    position:relative;
+}
+.blendRow li{
+    width:125px;
+    height:125px;
+    display:inline-block;
+    vertical-align:middle;
+    padding-right: 100px;
+}
+.blendRow li:last-child{
+    padding-right:0;
+}
+.icBlend6{
+    padding-left:225px;
+}
+.icBlend8{
+    padding-left:450px;
+}
+li.icBlend9{
+    padding-right:0;
+    padding-left:675px;
+}
+.icBlend12{
+    padding-left:225px;
+}
+.blendRow li img{
+    width:100%;
+    display: block;
+}
+.blendTxt{
+    height:100px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    position:absolute;
+}
+.weImg{
+    top:150px;
+    right:115px;
+}
+.blendImg{
+    top:400px;
+    left:-40px;
+}
+.theImg{
+    top:210px;
+    left:-75px;
+}
+.bestImg{
+    bottom:-145px;
+    left:-350px;
+}
+/*prd*/
+.prd{
+    padding:120px 0;
+    background:#eee;
+}
+.prd .inner{
+}
+.prdBox{
+    width:700px;
+    height:400px;
+    position: relative;
+    margin-bottom:50px;
+}
+.prdBox .goldBox{
+    padding:80px 100px;
+}
+.prdBox1{
+    background:url(../images/main/bg_teaBag.jpg) no-repeat;
+    background-size:cover;
+    background-position:center top;
+}
+.prdBox2{
+    background:url(../images/main/bg_woodBox.jpg) no-repeat;
+    background-size:cover;
+    background-position:center top;
+    margin-left:740px;
+}
+.prdBox3{
+    background:url(../images/main/bg_looseTea.jpg) no-repeat;
+    background-size:cover;
+    background-position:center top;
+    margin-bottom:0;
+}
+.prdBox a{
+    display:block;
+    height:100%;
+    padding:0;
+}
+.prdTxt{
+    width:584px;
+    height:282px;
+    background:url(../images/main/img_prdTxtBox.png) no-repeat;
+    background-position: center center;
+    background-size:100% 100%;
+    margin:60px 30px;
+    position: absolute;
+}
+.prdTxt1,.prdTxt3{
+    top:0;
+    right:-550px;
+}
+.prdTxt2{
+    top:0;
+    left:-550px;
+}
+/*video*/
+.video{
+    overflow: hidden;
+    background:#eee;
+    width:100%;
+    height:500px;
+    padding-bottom:100px;
+}
+.video video{
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
