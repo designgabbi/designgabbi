@@ -58,10 +58,10 @@ $(document).ready(function(){
 		write();
     /*     <!-------------   End   --------------->         */
     //INDEX : MAINMENU HOVER
-	$('.mnWeb').hover(function(){
-		$(this).siblings('.mnWebBg').addClass('hover');
+	$('.mnUiux').hover(function(){
+		$(this).siblings('.mnUiuxBg').addClass('hover');
 	},function(){
-		$(this).siblings('.mnWebBg').removeClass('hover');
+		$(this).siblings('.mnUiuxBg').removeClass('hover');
 	});
 	$('.mnBranding').hover(function(){
 		$(this).siblings('.mnBrandingBg').addClass('hover');
@@ -98,4 +98,46 @@ $(document).ready(function(){
 	AOS.init({
 		easing: 'ease-in-out-sine'
 	});
+	
+	//ABOUT : PIE CHART
+	$(window).scroll(function () {
+		var height = $(document).scrollTop();
+		if(height > 600){
+			$('.chart').easyPieChart({
+				scaleColor: false,
+				lineWidth: 10,
+				lineCap: 'round',
+				barColor: '#031da8',
+				size: 130,
+				animate: 1000
+			});
+			
+		}else{
+		}
+	});
+	
+	//SUB : MASONRY
+	var $grid = $('.grid').masonry({
+		// options...
+		itemSelector: '.grid-item',
+		horizontalOrder: true,
+		percentPosition: true
+	});
+	// layout Masonry after each image loads
+	$grid.imagesLoaded().progress( function() {
+		$grid.masonry('layout');
+	});
+	
+	//SUB : SLICK
+	 $('.variable-width').slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		prevArrow:'<i class="fas fa-angle-left"></i>',
+		nextArrow:'<i class="fas fa-angle-right"></i>'
+	});
+
 });
