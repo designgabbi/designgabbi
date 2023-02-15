@@ -8,6 +8,7 @@ $(document).ready(function(){
 			   'adventurer          ',
 			   'team player          ',
 			   'visual designer          ',
+                 'UI/UX designer          '
 			   'artist          '];
 		back = false;
 		index = 0;
