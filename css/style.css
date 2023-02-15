@@ -207,7 +207,7 @@
 .mnUiux{
 	width:220px;
 	height:260px;
-	background:url(../images/main/img_titBgBlue_uiux.png)no-repeat center center;
+	background:url(https://designgabbi.github.io/portfolio/images/main/img_titBgBlue_uiux.png)no-repeat center center;
 	top:85px;
 	left:20vw;
 }
@@ -906,7 +906,7 @@
 /* SUB VIEW & DETAIL BACKGROUND */
 /* SUB VIEW & DETAIL BACKGROUND */
 .uiuxBg{
-	background:url(../images/sub/uiux/img_titBgYellow_uiux.png)no-repeat 50% 70px;
+	background:url(https://designgabbi.github.io/portfolio/images/sub/uiux/img_titBgYellow_uiux.png)no-repeat 50% 70px;
 }
 .graphicBg{
 	background:url(../images/sub/graphic/img_titBgYellow_graphic.png)no-repeat 50% 125px;
