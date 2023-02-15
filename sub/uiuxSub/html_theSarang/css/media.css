@@ -1,0 +1,104 @@
+/* theSarang media width768px 이하 */
+@charset "utf-8";
+@media screen and (max-width:1200px){
+	.slideTxtWrap{
+		width:25vw;
+	}
+}
+@media screen and (max-width:850px){
+	.slideTxtWrap{
+		width:30vw;
+	}
+	.inner{
+		width:100%;
+	}
+	.prdBox{
+		margin:0 auto;
+		display:block;
+		margin-bottom:8vh;
+	}
+}
+@media screen and (max-width:768px){
+	/* header */
+	.utill,.sns{
+		width:15vw;
+	}
+	.utill{
+		right:2.21277vw;
+	}
+	.sns{
+		left:2.21277vw;
+	}
+	
+	/*redbox*/
+	.redBox{
+		right:85%;
+	}
+	.infoBox .redBoxCont{
+		margin:6vh 8vw;
+	}
+	.infoBottom div{
+		width:100%;
+	}
+	.infoBottom div:first-child{
+		margin-bottom:4vh;
+	}
+	.infoBox h5{
+		font-size:15px;
+	}
+	.infoBox li{
+		display:block;
+	}
+	
+	.infoBox{
+		width:80vw;
+	}
+	/* mySlidenav */
+	.menuBg{
+		width:100vw;
+	}
+	.mainMenu{
+		margin-top:15vh;
+	}
+	.menuList{
+		width:50%;
+		margin-right:0;
+		margin-bottom:40px;
+	}
+	/* sliderControl */
+	.sliderControl{
+		width:100vw;
+		margin-left:0;
+	}
+	.slideTxtWrap{
+		width:65vw;
+	}
+	
+	/* anchor */
+	#fp-nav.fp-right{
+		display:none;
+	}
+	
+	/* main banner */
+	.bnrImgWrap,.bnr04Img{
+		display:none;
+	}
+	
+	/*sub*/
+	.accordion{
+		display:none;
+	}
+	.contSearchWrap{
+		display:block;
+		margin-top:10px;
+	}
+}	
+@media screen and (max-width:480px){
+	.prdBox{
+		width:50%;
+		margin-bottom:7vh;
+	}
+	.contMenu span{
+		display:block;
+	}
+}
